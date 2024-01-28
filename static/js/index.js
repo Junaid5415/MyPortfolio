@@ -3,16 +3,14 @@ var select = document.querySelector('.certi');
 var images = select.querySelectorAll('img');
 var modal = document.getElementById('myModal');
 
-var img = document.getElementById('abc');
-
 var modalImg = document.getElementById('img01');
 
 var caption = document.getElementById('caption');
 
 var imgarray = Array.from(images)
 
-imgarray.forEach(function(img) {
-    img.onclick = function() {
+imgarray.forEach(function(img1) {
+    img1.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
         caption.innerHTML = this.alt;
