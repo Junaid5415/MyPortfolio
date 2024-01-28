@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
 *{
     margin: 0;
@@ -129,16 +131,20 @@ main{
     margin: 10px;
 }
 
+#main-div{
+    width: 60vw;
+}
+
 
 #main-div p{
-    width: 34vh;
+    width: 100%;
     display: inline-block;
-    font-size: 2.5vmin;
+    font-size: 2.5vw;
 }
 
 
 #main-div img{
-    width: 9vh;
+    width: 25vw;
     border-radius: 100vh;
     position: absolute;
     top: 12vh;
@@ -225,14 +231,147 @@ main{
 #second{
     margin: 10px 0px 0px 0px;
     display: flex;  
+    flex-wrap: wrap;
+    row-gap: 3vh;
     
 }
 
 #second img{
     margin: auto;
-    width: 10vw;
+    width: 14vw;
     object-fit: contain;
     
+}
+
+
+#third h1{
+    font-family: 'Pacifico';
+    text-align: center;
+    color: transparent;
+    background-clip:
+    text;
+    margin-bottom: 10px;
+    background-image: radial-gradient(rgb(93, 213, 139) , rgba(0, 0, 0, 0.637) 80%);
+}
+
+#third .certi{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    align-items: center;
+    animation: dash 2s linear infinite;
+    z-index:0;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.certi::before{
+    content: '';
+
+    background: transparent;
+    position: absolute;
+    height: 220%;
+    width:40%;
+    background-image: linear-gradient(#E5BB60, #376167);
+    z-index: 1;
+    animation: 
+    rotate 5s linear infinite;
+
+}
+
+.certi::after{
+    content: '';
+    position: absolute;
+    background-color: #FFEECF;
+    width: 98%;
+    height: 98%;
+    z-index: 2;
+    border-radius: 10px;
+
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.certi img{
+    margin: 10px;
+    width: 25vw;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 0px;
+    z-index: 3;
+    outline: 3px solid #A1662F;
+}
+
+.certi img:nth-child(1){
+    height: auto;
+}
+
+.certi img:nth-child(3){
+    height: auto;
+}
+/*  */
+
+/* Footer Styles */
+
+
+.main-foot{
+    margin-top: 20vw;
+    height: auto;
+    width: 100vw;
+    background-color: #211f1c6a;
+    justify-content:center;
+    align-items: center;
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer a{
+    position: relative;
+    font-size: 7vw;;
+    color: black;
+    margin: 10px auto;
+    z-index: 2;
+}
+
+.footer a::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.322);
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(5px);
+}
+
+#bottom_footer{
+
+    height:auto;
+    width: 100vw;
+    background-color: rgba(34, 31, 31, 0.689);
+    color: white;
 }
 
 
