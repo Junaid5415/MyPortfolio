@@ -1,6 +1,3 @@
-<!-- {% include 'navbar.html' %} -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/hamburger.css">
     <link rel="stylesheet" href="../static/css/modal.css">
-    
+    <link rel="stylesheet" href="../static/css/loader.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +16,11 @@
 
 </head>
 
-<body>
+<body id="myBody">
+
+    <div id="div">
+        <span></span>
+    </div>
 
     <nav class="my_nav">
         <ul class="container">
@@ -34,9 +35,6 @@
                 <span></span>
 
             </div>
-            
-            
-
             <li class="item"><a href="#">About</a></li>
             <li class="item"><a href="#">Contact Us</a></li>
             <li class="item"><a href="#">More</a></li>
@@ -48,10 +46,10 @@
             
             <p>
                 <span id="name">Junaid Ahmed</span>, a passionate and dedicated 21-year-old aspiring web developer, Proficient in <span id="python">Python</span>, <span id="django">Django</span>, <span id="html">HTML</span>, <span id="css">CSS</span>, <span id="js">JavaScript</span>, <span id="sql">SQL</span>, and <span id="mysql">MySQL</span>.<br>
-                Junaid possesses a versatile skill set essential for crafting dynamic and interactive web applications. His meticulous attention to detail, coupled with a creative flair, sets him apart as a promising talent in the realm of technology. Junaid's unwavering enthusiasm for coding and problem-solving, coupled with his robust technical knowledge, makes him a valuable asset to any web development team. As he embarks on his journey to become a seasoned web developer 
+                Junaid possesses a versatile skill set essential for crafting dynamic and interactive web applications. His meticulous attention to detail, coupled with a creative flair, sets him apart as a promising talent in the realm of technology. Junaid's unwavering enthusiasm for coding and problem-solving, coupled with his robust technical knowledge, makes him a valuable asset to any web development team. As he embarks on his journey to become a seasoned web developer.
             </p>
         <div id="content">
-            <a target="_blank" href="https://www.linkedin.com/in/junaid-ahmed-a10302273/"><img src="../static/images/Junaid_Photo.webp" alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/in/junaid-ahmed-a10302273/"><img src="../static/images/Junaid_Photo.webp" alt="MyPhoto"></a>
         </div>
             
 
@@ -61,8 +59,12 @@
         <div id="second">
             <img src="../static/images/python.webp" alt="">
             <img src="../static/images/django.webp" alt="">
-            <img src="../static/images/html.webp" alt="">
-            <img src="../static/images/css.webp" alt="">
+            <!-- <img src="../static/images/html.webp" alt=""> -->
+
+            <img src="https://img.icons8.com/color/480/html-5--v1.png" alt="html-5--v1"/>
+            <!-- <img src="../static/images/css.webp" alt=""> -->
+            <img src="https://img.icons8.com/color/480/css3.png" alt="css3">
+
             <img src="../static/images/javascript.webp" alt="">
             <img src="../static/images/sql.webp" alt="">
             <img src="../static/images/mysql.webp" alt=""><img src="../static/images/Git.webp" alt=""><img src="../static/images/Github.webp" alt="">
@@ -87,6 +89,15 @@
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+
+    
+    
+    <!-- <iframe width="360" height="360" src="https://www.youtube.com/embed/Fsc3eCv3Rts?si=IIj132xxLH488uU7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    
+    
+    
+        
+
 
     <div class="main-foot">
         <div class="footer">
@@ -123,7 +134,21 @@
 
     <script src="../static/js/index.js"></script>
     <script src="../static/js/hamburger.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const myDiv = document.getElementById('div');
+            const body = document.querySelector('#myBody');
+            const spam = myDiv.querySelector('span');
+            
+                function myFunction(){
+                myDiv.style.display = 'none'; 
+
+                }
     
+            body.onload = myFunction()
+        });
+    </script>
 </body>
 
 
