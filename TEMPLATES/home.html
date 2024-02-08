@@ -18,7 +18,8 @@
 
 <body id="myBody">
 
-    <div id="div">
+
+    <div id="div"> <!-- Loader -->  
         <span></span>
     </div>
 
@@ -35,9 +36,9 @@
                 <span></span>
 
             </div>
-            <li class="item"><a href="#">About</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
-            <li class="item"><a href="#">More</a></li>
+            <li class="item"><a href="{% url 'about' %}">About</a></li>
+            <li class="item"><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li class="item"><a href="{% url 'more' %}">More</a></li>
         </ul>
     </nav>
 
@@ -123,9 +124,17 @@
         </div>
 
         <div id="bottom_footer">
-            <h4>Copyrights</h4>  <span id="copy">&#169;</span>
-            <span class="create">Created By <span class="junaid">Junaid Ahmed</span></span>
+            <div class="flex-1">
+                <h4>Copyrights</h4>
+                <sup><span id="copy">&#169;</span></sup>
+                
+            </div>
 
+            <div class="flex-2">
+                <span class="create">Created By &nbsp;
+                <span class="junaid">Junaid Ahmed</span></span>
+            </div>
+            
         </div>
     </div>
 

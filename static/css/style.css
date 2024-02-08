@@ -18,9 +18,10 @@ body{
     /* opacity: 0 `; */
     background-color: rgba(255, 223, 162, 0.505);
     /* background-color: #004d74; */
-    font-family: 'Lemon', sans-serif;
+    font-family: Lemon, sans-serif;
 }
 
+/* Navbar Styles */
 nav {
     margin: 10px 20px 40px 20px;
 
@@ -127,11 +128,11 @@ ul>li{
     transition: opacity 0.5s, visibility 0.5s;  
 }
 
-/*navbar ends here */
-
-/* main content starts from here */
+/*Navbar Styles */
 
 
+
+/* Body Styles */
 main{
     margin: 10px;
 }
@@ -353,7 +354,7 @@ main{
 
 .certi img{
     margin: 3vw ;
-    width: 23vw;
+    width: 18vw;
     height: auto;
     border: 2px solid black;
     border-radius: 0px;
@@ -368,7 +369,9 @@ main{
 .certi img:nth-child(3){
     height: auto;
 }
-/*  */
+
+/* Body Styles */
+
 
 /* Footer Styles */
 
@@ -411,13 +414,108 @@ main{
 }
 
 #bottom_footer{
-
+    display: flex;
+    flex-direction: row;
     height:auto;
     width: auto;
+    justify-content: flex-start;
+    align-items:start;
     background-color: rgba(34, 31, 31, 0.689);
-    color: white;
+    color: rgba(255, 255, 255, 0.92);
 }
 
+#bottom_footer .flex-1{
+    margin: 0 auto 0 2vw;
+}
+
+#bottom_footer .flex-2{
+    margin: 0 2vw 0 auto
+}
+
+#bottom_footer h4{
+    display: inline-block;
+    font-size: 0.8em;
+    color: rgba(0, 203, 249, 0.5);
+    animation: glow 3s infinite linear;
+        
+
+}
+#bottom_footer #copy{
+    display: inline;
+    font-size: 0.5em;
+    font-weight: bolder;
+    color: rgba(0, 203, 249, 0.5);
+    animation: glow 3s infinite linear;
+
+
+}
+
+#bottom_footer .create{
+    font-size: 2.5vw;
+    display: inline;
+    animation: glow 3s infinite linear ;
+    color: rgba(0, 203, 249, 0.5);
+
+
+}
+#bottom_footer span.junaid{
+    font-size: 1.2em;
+    color: rgba(0, 203, 249, 0.5);
+    animation: glow 3s infinite linear;
+}
+
+@keyframes glow {
+    0%{
+        text-shadow: 0 0 10px rgba(169, 0, 0, 0.5);
+    }
+    10%{
+        text-shadow: 0 0 10px rgba(169, 87, 0, 0.5);
+
+    }
+    20%{
+        text-shadow: 0 0 10px rgba(219, 205, 0, 0.5);
+
+    }
+    30%{
+        text-shadow: 0 0 10px rgba(115, 207, 3, 0.5);
+
+    }
+    40%{
+        text-shadow: 0 0 10px rgba(0, 133, 67, 0.5);
+
+    }
+    50%{
+        text-shadow: 0 0 10px rgba(7, 209, 219, 0.5);
+
+    }
+    60%{
+        text-shadow: 0 0 10px rgba(0, 42, 71, 0.5);
+
+    }
+    70%{
+        text-shadow: 0 0 10px rgba(0, 28, 184, 0.5);
+
+    }
+    80%{
+        text-shadow: 0 0 10px rgba(36, 0, 80, 0.5);
+
+    }
+    90%{
+        text-shadow: 0 0 10px rgba(224, 0, 224, 0.5);
+
+    }
+    100%{
+        text-shadow: 0 0 10px rgba(216, 0, 76, 0.5);
+
+    }
+
+
+}
+
+/* Footer Styles */
+
+
+/* Scroll-Bar Styles */
 
 body::-webkit-scrollbar {
     margin-block: 2em;
@@ -429,11 +527,9 @@ body::-webkit-scrollbar {
     background: rgba(0, 0, 0, 0.5);        /* color of the tracking area */
     margin-block:5px;
     margin-right: 10px;
-
     border-radius: 1vw;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-
   }
   
   body::-webkit-scrollbar-thumb {
@@ -448,9 +544,38 @@ body::-webkit-scrollbar {
     display: none;
   }
 
-/* Mobile Design Here */
+  #myModal::-webkit-scrollbar{
+    margin-block: 2em;
+    width: 1em;               /* width of the entire scrollbar */
+    overflow: auto;
+  }
 
-/* Desktop Design Starts Here */
+  #myModal::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);        /* color of the tracking area */
+    margin-block:5px;
+    margin-right: 10px;
+    border-radius: 1vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #myModal::-webkit-scrollbar-thumb {
+    background-color: #FFEECF;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border:3px solid rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #myModal::-webkit-scrollbar-button{
+    display: none;
+  }
+  /* Scroll-Bar Styles */
+
+/* Mobile Design  */
+
+
+/* Desktop( < 768px ) Design Starts Here */
 
 @media screen and  (min-width:768px){
 
@@ -459,6 +584,7 @@ body::-webkit-scrollbar {
         /* overflow-x:hidden; */
     }
 
+    /* Navbar Styles */
     nav {
         margin: 20px 40px 45px 40px;
     
@@ -479,9 +605,10 @@ body::-webkit-scrollbar {
         font-size:1.5vw;
     }
 
-    /* Navbar ends here */
+    /* Navbar Styles */
 
 
+    /* Body Styles */
     #main-div{
         position: relative;
         width: 100%;
@@ -548,10 +675,11 @@ body::-webkit-scrollbar {
         background-color: transparent;
         width: 80vw;
         /* min-height: 42vh; */
-        height: 40vw;
+        height: auto;
         /* background-color: #ff1010; */
         display: flex;
         flex-wrap: wrap;
+        flex:1 ;
         justify-content: space-evenly;
         align-items: center;
         align-content: center;
@@ -587,14 +715,78 @@ body::-webkit-scrollbar {
     }
 
 
-    div#third img{
+    .certi img{
         margin:4vw;
-        width: 25vh;
+/* 
+        min-width: 15vh;
+        max-width: 25vh; */
+        width: 18vw;
         height: auto;
-        
         object-fit: contain;
     }
+    /* Body Styles */
 
+
+    /* Footer Styles */
+    .main-foot{
+        margin-top: 20vw;
+        height: auto;
+        width: auto;
+        background-color: #211f1c6a;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:    1fr 1fr 1fr ;
+    }
+    
+    .footer a{
+        position: relative;
+        font-size: 7vw;;
+        color: black;
+        margin: 10px auto;
+        z-index: 2;
+    }
+
+    .footer i.fa-brands{
+        font-size: 5vw;
+    }
+    
+    .footer a::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.409);
+        height: 6.5vw;
+        width: 6.5vw;
+        border-radius: 50%;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        filter: blur(5px);
+    }
+    
+    #bottom_footer{
+        height:auto;
+        width: auto;
+        background-color: rgba(34, 31, 31, 0.689);
+        color: white;
+    }
 
 }
 
+
+
+
+/* @media screen and (min-width: 768px) and (max-width:923px){ 
+
+    .certi img{
+        margin:4vw;
+        max-width: 21vh;
+        height: auto;
+        object-fit: contain;
+    }
+}  */
