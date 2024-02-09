@@ -221,7 +221,7 @@ main{
 
 #name{
     color: transparent;
-    font-size: 2.3vh;
+    font-size: 2.8vh;
     background-image: radial-gradient(orange, red);
     background-clip: text;
 }
@@ -628,6 +628,10 @@ body::-webkit-scrollbar {
         font-size: 2vw;
     }
 
+    #main-div #name{
+        font-size: 4vw;
+    }
+
     #main-div #content{
         /* background-color: orange; */
         width:35%;
@@ -772,10 +776,51 @@ body::-webkit-scrollbar {
     #bottom_footer{
         height:auto;
         width: auto;
+        align-items: center;
         background-color: rgba(34, 31, 31, 0.689);
         color: white;
     }
 
+    #bottom_footer .flex-1{
+        margin: 0 auto 0 2vw;
+    }
+    
+    #bottom_footer .flex-2{
+        margin: 0 2vw 0 auto
+    }
+    
+    #bottom_footer h4{
+        display: inline-block;
+        font-size: 1.6vw;
+        color: rgba(0, 203, 249, 0.5);
+        animation: glow 3s infinite linear;
+            
+    
+    }
+    #bottom_footer #copy{
+        display: inline;
+        font-size: 1.2vw;
+        font-weight: bolder;
+        color: rgba(0, 203, 249, 0.5);
+        animation: glow 3s infinite linear;
+    
+    
+    }
+    
+    #bottom_footer .create{
+        font-size: 1.5vw;
+        display: inline;
+        animation: glow 3s infinite linear ;
+        color: rgba(0, 203, 249, 0.5);
+    
+    
+    }
+    #bottom_footer span.junaid{
+        font-size: 1.2em;
+        color: rgba(0, 203, 249, 0.5);
+        animation: glow 3s infinite linear;
+    }
+    
 }
 
 

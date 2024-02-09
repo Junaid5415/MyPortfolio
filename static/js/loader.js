@@ -1,17 +1,13 @@
-// const adiv = document.querySelector('div');
-// const body = document.querySelector('#myBody');
+document.addEventListener('DOMContentLoaded', function() {
+    const myDiv = document.getElementById('div');
+    const body = document.querySelector('body');
+    const span = myDiv.querySelector('span');
+    
+        function myFunction(){
+            myDiv.style.display = 'none'; 
+      
 
-// const span = adiv.querySelector('span');
+        }
 
-// function myfunc(){
-//     body.onload = adiv.style.display = 'none';
-//     body.onload = span.style.scale = '100';
-//     // body.style.display = 'none';
-// }
-
-// function loaded(){
-//     console.log('started');
-//     setTimeout(function(){
-//         myfunc()
-//     },1900);
-// }
+    body.onload = myFunction;
+});
